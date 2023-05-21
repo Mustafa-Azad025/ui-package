@@ -1,0 +1,31 @@
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Footer Component **********
+
+-- component footer:
+string title:
+string link:
+ftd.ui list social-buttons:
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-self: center
+margin-top.px: 70
+margin-bottom.px: 20
+
+-- ftd.text: $footer.title
+color: white
+link: $footer.link
+role: $inherited.types.label-large
+margin-top.px: 13
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer
